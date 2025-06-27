@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warkop Bobby</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8b5313fa;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #c56e106b;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            max-height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .menu-item h3 {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        button {
+            margin-top: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Warkop Bobby</h1>
+        <p>Tempat Nongkrong Asik dan Santai</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2 id="menu">Menu Favorit</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\WhatsApp Image 2025-06-25 at 18.02.08.jpeg" alt="Kopi Hitam">
+                <h3>Kopi Hitam</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>            
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\66435d45-afde-4d31-850c-da7bc466cb7e.jfif" alt="Kopi Hitam">
+                <h3>Kopi Susu</h3>
+                <p>Rp7.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>            
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\gambar susu panas coklat.jfif" alt="Kopi Hitam">
+                <h3>Susus Coklat</h3>
+                <p>Rp8.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>           
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\5f88af54-9dbb-4dc1-99a5-6648ac07ee6d.jfif" alt="Kopi Hitam">
+                <h3>Teh Manis</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>            
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\WhatsApp Image 2025-06-27 at 10.43.10.jpeg" alt="Kopi Hitam">
+                <h3>Es Jeruk</h3>
+                <p>Rp7.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\air mineral.jfif" alt="Kopi Hitam">
+                <h3>Air Mineral</h3>
+                <p>Rp4.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>            
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\mie rebus.jfif" alt="Kopi Hitam">
+                <h3>Mie Rebus</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>            
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\mie goreng.jfif" alt="Kopi Hitam">
+                <h3>Mie Goreng</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>  
+            
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\ayam penyet.jfif" alt="Kopi Hitam">
+                <h3>Ayam Penyet</h3>
+                <p>Rp15.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\nasi kuning.jfif" alt="Indomie Rebus">
+                <h3>Nasi Kuning</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Indomie Rebus')">Pesan</button>
+            </div>            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\roti bakar.jfif" alt="Kopi Hitam">
+                <h3>Roti Bakar</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Kopi Hitam')">Pesan</button>
+            </div>          
+            <div class="menu-item">
+                <img src="c:\Users\Admin\Downloads\gorengan.jfif" alt="Roti Bakar">
+                <h3>Gorengan</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Roti Bakar')">Pesan</button>
+            </div>
+        </div>
+
+        <h2 id="tentang" style="margin-top: 3rem;">Tentang Kami</h2>
+        <p>Warkop Bobby adalah tempat terbaik untuk bersantai, ngopi, dan ngobrol bersama teman. Kami menyajikan berbagai macam minuman dan makanan ringan khas warung kopi Aceh.</p>
+
+        <h2 id="kontak" style="margin-top: 3rem;">Kontak</h2>
+        <p>📍 Jl. Beureunuen,Aceh, Medan No. 434 ,Beureunuen </p>
+        <p>📞 087886773142 </p>
+    </div>
+
+    <footer>
+        &copy; 2025 Warkop Bobby
+    </footer>
+
+    <script>
+        function pesan(item) {
+            alert("Terima kasih, Anda telah memesan " + item + "!");
+        }
+    </script>
+
+</body>
+</html>
+<script>
+    // Animasi fade-in + zoom-in untuk setiap menu-item
+    document.addEventListener("DOMContentLoaded", function() {
+        const items = document.querySelectorAll('.menu-item');
+        items.forEach((item, i) => {
+            item.style.opacity = 0;
+            item.style.transform = "scale(0.8) translateY(30px)";
+            setTimeout(() => {
+                item.style.transition = "all 0.7s cubic-bezier(.4,2,.6,1)";
+                item.style.opacity = 1;
+                item.style.transform = "scale(1) translateY(0)";
+            }, 150 * i);
+        });
+    });
+</script>
